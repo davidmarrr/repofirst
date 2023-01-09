@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>/* EXERCICI 9 */
+        var ample = screen.width;
+  var alt = screen.height;
+  var diago = Math.sqrt(ample*ample + alt*alt).toFixed(2);
+    console.log(`L'ample és de ${ample} píxels`)
+    console.log(`L'alt és de ${alt} píxels`)
+    console.log(`La diagonal és de ${diago} píxels`)
+    </script> -->
+<style src="estilo.css"></style>
+</head>
+<body>
+
+    <div><!-- EXERCICI 9 -->
+        <div><button type="submit" id="mesuresp">Quines son les dimensions de la teva pantalla?</button>
+        <p id="mesurespant"></p></div>
+    
+    </div>
+    <div><!-- EXERCICI 10 -->
+        <button type="submit" id="aleatori">Nombre aleatori</button>
+        <p id="numeret"></p>
+    </div>
+    <div><!-- EXERCICI 11 -->
+        <input id="texte" type="text" value="">
+    <button onclick="transforma()" id="extraer">Introdueix un text de més de 10 lletres</button>
+<div id="mostra"></div>
+    </div>
+    <div><!-- EXERCICI TRIANGULO -->
+        <button type="submit" id="bototri">Calcula superficie d'un triangle</button>
+        <div id="triarea"><p></p></div>
+    </div>
+    <div><!-- EXERCICI 12 -->
+        <p>Selecciona un color de fons</p>
+    <select id="colors" onchange="canviColor()">
+        <option value="burlywood">Crema</option>
+        <option value="olivedrab">Verd</option>
+        <option value="gray">Gris</option>
+        <option value="mediumpurple">Morat</option>
+      </select>
+    </div>
+    <div><!-- EXERCICI 13 -->
+        <button type="submit" onclick="finestra()">Clica aquí per a llegir l'avís</button>
+        <div id="triarea"><p></p></div>
+    </div>
+    
+   <div> <!-- EXERCICI 14  -->
+        <img id="bombeta" src="apagada.gif"></img>
+        <button  onclick="onOff()">Encén/Apaga</button>
+    </div>
+
+    <section><!-- EXERCICI 15 -->
+        <input id="textstring" type="text" value="" placeholder="Introdueix un text de qualsevol longitud">
+    <button onclick="guarda()">Desa'l</button>
+    <button onclick="numCar()" id="numero">Nombre de caràcters</button>
+    <button onclick="cursiva()" id="cursi">En cursiva</button>
+    <button onclick="negrita()" id="negri">En negreta</button>
+    <button onclick="rojo()" id="vermell">En vermell</button>
+    <button onclick="gran()" id="grande">Augmenta el tamany</button>
+    <button onclick="tacha()" id="tachado">Tatxa'l</button>
+    <div id="show"></div>
+    </section>
+
+
+
+
+    <script src="./objectPredeJS/screen.js"></script>  <!-- EXERCICI 9 -->
+   <script src="./objectPredeJS/numAle.js"></script>  <!-- EXERCICI 10 -->
+    <script src="extraerstring.js"></script> 
+    <!-- EXERCICI 11 -->
+    <script src="./objectPredeJS/triangle.js"></script> <!-- EXERCICI TRIANGLE -->
+    <script src="./objectPredeJS/bcolor.js"></script> <!-- EXERCICI 12 -->
+    <script src="./objectPredeJS/texto.js"></script> <!-- EXERCICI 14 -->
+    <script src="./objectPredeJS/bombilla.js"></script> <!-- EXERCICI 15 -->
+   <script src="./objectPredeJS/inputext.js"></script> 
+</body> 
+</html>
