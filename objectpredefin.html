@@ -31,10 +31,6 @@
     <button onclick="transforma()" id="extraer">Introdueix un text de més de 10 lletres</button>
 <div id="mostra"></div>
     </div>
-    <div><!-- EXERCICI TRIANGULO -->
-        <button type="submit" id="bototri">Calcula superficie d'un triangle</button>
-        <div id="triarea"><p></p></div>
-    </div>
     <div><!-- EXERCICI 12 -->
         <p>Selecciona un color de fons</p>
     <select id="colors" onchange="canviColor()">
@@ -49,14 +45,14 @@
         <div id="triarea"><p></p></div>
     </div>
     
-   <div> <!-- EXERCICI 14  -->
-        <img id="bombeta" src="apagada.gif"></img>
+   <div> <!-- EXERCICI 14 BOMBETA  -->
+        <img id="bombeta" src="./imgs/apagada.gif"></img>
         <button  onclick="onOff()">Encén/Apaga</button>
     </div>
 
-    <section><!-- EXERCICI 15 -->
+    <section><!-- EXERCICI 15 MODIFICAR TEXTE-->
         <input id="textstring" type="text" value="" placeholder="Introdueix un text de qualsevol longitud">
-    <button onclick="guarda()">Desa'l</button>
+   
     <button onclick="numCar()" id="numero">Nombre de caràcters</button>
     <button onclick="cursiva()" id="cursi">En cursiva</button>
     <button onclick="negrita()" id="negri">En negreta</button>
@@ -64,19 +60,59 @@
     <button onclick="gran()" id="grande">Augmenta el tamany</button>
     <button onclick="tacha()" id="tachado">Tatxa'l</button>
     <div id="show"></div>
+    <button onclick="borra()">Esborra</button>
     </section>
+    <!-- EXERCICI TAULA 2x2 -->
+<section>
+    <table class="espaitaula" border="1"></table>
+    <div>
+        <input type="button" value="Genera una taula" id="bototaula">
 
+        <input type="button" value="Esborra-la" id="botoborra">
+    </div>
+</section>
+<section><!-- EXERCICI 17 MAYA -->
+    <p>Quant fa que s'hauria d'haver acabat el mon segons els mayes?</p>
+    <input type="button" value="Esbrina-ho" id="botomaya">
+    <div id="showmaya"></div>
+</section>
+<div><!-- EXERCICI 18 TRIANGLE -->
+    <input id="base" type="text"  placeholder="Introdueix la base en cms"><button type="submit" id="botobase"> Valida-la amb un click</button>
+    
+    <input id="altura" type="text"  placeholder="Introdueix l'altura en cms"><button type="submit" id="botoalt">Valida-la amb un click</button>
+    
+    <button type="submit" id="bototri">Calcula superficie d'un triangle</button>
+    <div id="triarea"><p></p></div>
+</div>
+  <!-- EXERCICI TAULA 19-->
+<section>
+    <div>
+        <table id="taulaedit" border="1">
+            
+        </table>
+    </div>
+    <div>
+        <input id="numfiles" type="number"  placeholder="Introdueix el nombre de fileres">
+        <input id="numcolus" type="number"  placeholder="Introdueix el nombre de columnes">
+        <button type="submit" id="botogenera">Genera-la</button>
+        <button type="submit" id="botoesborra">Esborra-la</button>
+    </div>
 
+</section>
 
 
     <script src="./objectPredeJS/screen.js"></script>  <!-- EXERCICI 9 -->
    <script src="./objectPredeJS/numAle.js"></script>  <!-- EXERCICI 10 -->
     <script src="extraerstring.js"></script> 
     <!-- EXERCICI 11 -->
-    <script src="./objectPredeJS/triangle.js"></script> <!-- EXERCICI TRIANGLE -->
+    
     <script src="./objectPredeJS/bcolor.js"></script> <!-- EXERCICI 12 -->
     <script src="./objectPredeJS/texto.js"></script> <!-- EXERCICI 14 -->
-    <script src="./objectPredeJS/bombilla.js"></script> <!-- EXERCICI 15 -->
-   <script src="./objectPredeJS/inputext.js"></script> 
+    <script src="./objectPredeJS/bombilla.js"></script> <!-- EXERCICI 14 BOMBETA -->
+   <script src="./objectPredeJS/inputext.js"></script> <!-- EXERCICI 15 DEFINIR TEXTE -->
+   <script src="./objectPredeJS/tabla.js"></script><!-- EXERCICI 16 TABLA 2x2 -->
+   <script src="./objectPredeJS/maya.js"></script><!-- EXERCICI 17 MAYA -->
+   <script src="./objectPredeJS/triangle.js"></script> <!-- EXERCICI 18 TRIANGLE -->
+   <script src="./objectPredeJS/tabla2.js"></script><!-- EXERCICI 19 TABLA 2x2 -->
 </body> 
 </html>

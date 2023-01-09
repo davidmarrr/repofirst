@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<section>
+  <div class="espaitaula"></div>
+  <div>
+      <input type="button" value="Genera una taula" id="bototaula">
+
+      <input type="button" value="Esborra-la" id="botoborra">
+  </div>
+</section>
+<script>
+
+bototaula.addEventListener("click", ()=> {
+// Obtener la referencia del elemento body
+var body = document.getElementsByClassName("espaitaula")[0];
+
+// Crea un elemento <table> y un elemento <tbody>
+var taula  = document.createElement("table");
+var marctaula = document.createElement("tbody");
+var i = 0;
+
+do {
+  var filera = document.createElement("tr");
+  i++;
+}
+while (i<2)
+var j =0;
+do{
+  var celda = document.createElement("td");
+  var textoCelda = document.createTextNode("Text Fila "+i+", Text columna "+j);
+  celda.appendChild(textoCelda);
+
+  filera.appendChild(celda);
+  
+}while (j<2)
+
+marctaula.appendChild(filera);
+
+
+taula.appendChild(marctaula);
+
+body.appendChild(taula);
+
+
+taula.setAttribute("border-collapse", "collapse");
+
+});
+
+let botoborra = document.getElementById("botoborra");
+
+
+</script>
+<!-- botoborra.addEventListener("click", ()=> { 
+// Obtener la referencia del elemento body
+var body = document.getElementsByTagName("body")[0];
+
+// Crea un elemento <table> y un elemento <tbody>
+var taula  = document.getElementsByTagName("table");
+var marctaula = document.getElementsByTagName("tbody");
+
+var esborra = taula.removeChild(marctaula);
+})-->
+</body>
+</html>
